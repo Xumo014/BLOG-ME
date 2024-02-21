@@ -36,3 +36,8 @@ def About(request):
     template_name = "about.html"
     context = {"skills": skills, "abouts": abouts}
     return render(request, template_name=template_name, context=context)
+
+
+def AddPost(request):
+    template_name = "add.html"
+    return render(request, template_name=template_name)
